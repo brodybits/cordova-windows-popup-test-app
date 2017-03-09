@@ -51,6 +51,25 @@ function prompt3() {
   );
 }
 
+function popup1() {
+  navigator.notification.popup(
+    'IGNORED 1',
+    onConfirmChoice,
+    'IGNORED 2',
+    ['Choice 1', 'Choice 2', 'Choice 3', 'Choice 4'],
+    {x:50,y:75}
+  );
+}
+
+function popup2() {
+  navigator.notification.popup2(
+    'IGNORED 1',
+    onConfirmChoice,
+    'IGNORED 2',
+    ['Choice 1', 'Choice 2', 'Choice 3', 'Choice 4']
+  );
+}
+
 function reload() {
   location.reload();
 }
@@ -65,6 +84,8 @@ document.addEventListener('deviceready', function() {
   $('#confirm-3').click(confirm3);
   $('#prompt-2').click(prompt2);
   $('#prompt-3').click(prompt3);
+  $('#popup-1').click(popup1);
+  $('#popup-2').click(popup2);
   $('#reload').click(reload);
   $('#location-page2').click(goToPage2);
 });
