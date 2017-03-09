@@ -1,6 +1,6 @@
-# Cordova dialogs bootstrap test app with Windows popups
+# Cordova Windows popup test app
 
-Template to play with Cordova dialogs with popups on Windows. May be used as a starter project.
+Template to play with Cordova popup dialogs on Windows. May be used as a starter project.
 
 **AUTHOR:** [@brodybits (Christopher J. Brody aka Chris Brody)](https://github.com/brodybits)
 
@@ -50,11 +50,8 @@ cordova run android
 
 - Popup test 1: popup dialog test with 4 choices at `{x:50,y:75}`, using `Windows.UI.Popups.PopupMenu` (Windows ONLY)
 - Popup test 2: popup dialog test with 4 choices, using HTML implementation (Windows ONLY)
-- Native alert dialog test
-- Native confirm dialog test with 2 choices (LABELS BROKEN on browser)
-- Native confirm dialog test with 3 choices (BROKEN on browser & Windows Mobile)
-- Native prompt dialog test with 2 choices (BROKEN on browser)
-- Native prompt dialog test with 3 choices (BROKEN on browser & Windows Mobile)
+- Native confirm dialog test with 2 choices - using `Windows.UI.Popups.MessageDialog` on Windows (LABELS BROKEN on browser)
+- Native confirm dialog test with 3 choices - using `Windows.UI.Popups.MessageDialog` on Windows (BROKEN on browser & Windows Mobile)
 - Location reload
 - Follow link to page 2
 - Change window.location to page 2

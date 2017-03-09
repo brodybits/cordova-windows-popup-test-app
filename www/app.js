@@ -1,7 +1,3 @@
-function nativeAlertTest() {
-  navigator.notification.alert('Native alert test message');
-}
-
 function onConfirmChoice(choiceIndex) {
   if (choiceIndex === 0)
     navigator.notification.alert('Confirmed no choice');
@@ -24,30 +20,6 @@ function confirm3() {
     onConfirmChoice,
     'Confirm 3 choices',
     ['Choice 1', 'Choice 2', 'Choice 3']
-  );
-}
-
-function onPromptRes(res) {
-  navigator.notification.alert('Response with choice: ' + res.buttonIndex + ' input: ' + res.input1);
-}
-
-function prompt2() {
-  navigator.notification.prompt(
-    'Enter input & confirm choice',
-    onPromptRes,
-    'Prompt',
-    ['Choice 1', 'Choice 2'],
-    'default input'
-  );
-}
-
-function prompt3() {
-  navigator.notification.prompt(
-    'Enter input & confirm choice',
-    onPromptRes,
-    'Prompt 3 choices',
-    ['Choice 1', 'Choice 2', 'Choice 3'],
-    'default input'
   );
 }
 
@@ -79,11 +51,8 @@ function goToPage2() {
 }
 
 document.addEventListener('deviceready', function() {
-  $('#native-alert-test').click(nativeAlertTest);
   $('#confirm-2').click(confirm2);
   $('#confirm-3').click(confirm3);
-  $('#prompt-2').click(prompt2);
-  $('#prompt-3').click(prompt3);
   $('#popup-1').click(popup1);
   $('#popup-2').click(popup2);
   $('#reload').click(reload);
