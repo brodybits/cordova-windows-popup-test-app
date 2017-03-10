@@ -23,6 +23,15 @@ function confirm3() {
   );
 }
 
+function confirm4() {
+  navigator.notification.confirm(
+    'Please confirm a choice',
+    onConfirmChoice,
+    'Confirm 4 choices',
+    ['Choice 1', 'Choice 2', 'Choice 3', '4th choice']
+  );
+}
+
 function popup1() {
   navigator.notification.popup(
     'IGNORED 1',
@@ -45,6 +54,7 @@ function popup2() {
 document.addEventListener('deviceready', function() {
   $('#confirm-2').click(confirm2);
   $('#confirm-3').click(confirm3);
+  $('#confirm-4').click(confirm4);
   $('#popup-1').click(popup1);
   $('#popup-2').click(popup2);
 });

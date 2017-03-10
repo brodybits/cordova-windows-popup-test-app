@@ -52,3 +52,4 @@ cordova run android
 - Popup test 2: popup dialog test with 4 choices, using `navigator.notification.popup2` which uses an HTML implementation (Windows ONLY)
 - Native confirm dialog test with 2 choices - using `navigator.notification.confirm` which uses `Windows.UI.Popups.MessageDialog` on Windows (LABELS BROKEN on browser)
 - Native confirm dialog test with 3 choices - using `navigator.notification.confirm` which uses `Windows.UI.Popups.MessageDialog` on Windows (BROKEN on browser & Windows Mobile)
+- Native confirm dialog test with 4 choices - using `navigator.notification.confirm` (WORKING on iOS, BROKEN on browser, Android, and Windows)
