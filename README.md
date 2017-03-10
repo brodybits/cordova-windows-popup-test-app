@@ -48,10 +48,10 @@ cordova run android
 
 ## Functionality
 
-- Popup test 1: popup dialog test with 4 choices at `{x:50,y:75}`, using `Windows.UI.Popups.PopupMenu` (Windows ONLY)
-- Popup test 2: popup dialog test with 4 choices, using HTML implementation (Windows ONLY)
-- Native confirm dialog test with 2 choices - using `Windows.UI.Popups.MessageDialog` on Windows (LABELS BROKEN on browser)
-- Native confirm dialog test with 3 choices - using `Windows.UI.Popups.MessageDialog` on Windows (BROKEN on browser & Windows Mobile)
+- Popup test 1: popup dialog test with 4 choices at `{x:50,y:75}`, using `navigator.notification.popup` which uses `Windows.UI.Popups.PopupMenu` (Windows ONLY)
+- Popup test 2: popup dialog test with 4 choices, using `navigator.notification.popup2` which uses an HTML implementation (Windows ONLY)
+- Native confirm dialog test with 2 choices - using `navigator.notification.confirm` which uses `Windows.UI.Popups.MessageDialog` on Windows (LABELS BROKEN on browser)
+- Native confirm dialog test with 3 choices - using `navigator.notification.confirm` which uses `Windows.UI.Popups.MessageDialog` on Windows (BROKEN on browser & Windows Mobile)
 - Location reload
 - Follow link to page 2
 - Change window.location to page 2
