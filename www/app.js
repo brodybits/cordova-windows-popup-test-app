@@ -42,19 +42,9 @@ function popup2() {
   );
 }
 
-function reload() {
-  location.reload();
-}
-
-function goToPage2() {
-  window.location = "page2.html";
-}
-
 document.addEventListener('deviceready', function() {
   $('#confirm-2').click(confirm2);
   $('#confirm-3').click(confirm3);
   $('#popup-1').click(popup1);
   $('#popup-2').click(popup2);
-  $('#reload').click(reload);
-  $('#location-page2').click(goToPage2);
 });
